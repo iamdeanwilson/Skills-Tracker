@@ -12,25 +12,21 @@ public class SkillsController {
     @RequestMapping
     public String skills(){
         return "<html>" +
-                "<body>" +
-                "<H1>" +
-                "Skills Tracker" +
-                "</H1>" +
-                "<H2>" +
-                "We have a few skills we would like to learn. Here is the list!" +
-                "</H2>" +
-                "<OL>" +
-                "<li>" +
-                "Java" +
-                "</li>" +
-                "<li>" +
-                "JavaScript" +
-                "</li>" +
-                "<li>" +
-                "Python" +
-                "</li>" +
-                "</OL>" +
-                "</body>" +
+                    "<body>" +
+                        "<H1>" + "Skills Tracker" + "</H1>" +
+                        "<H2>" + "We have a few skills we would like to learn. Here is the list!" + "</H2>" +
+                            "<OL>" +
+                                "<li>" +
+                                    "Java" +
+                                "</li>" +
+                                "<li>" +
+                                    "JavaScript" +
+                                "</li>" +
+                                "<li>" +
+                                    "Python" +
+                                "</li>" +
+                            "</OL>" +
+                    "</body>" +
                 "</html>";    }
 
     @GetMapping("form")
@@ -74,15 +70,15 @@ public class SkillsController {
     public String formSubmission(@RequestParam String name, String favoriteLanguage, String secondFavoriteLanguage, String thirdFavoriteLanguage){
         return "<h1>" + name + "</h1>" +
                 "<OL>" +
-                "<li>" +
-                favoriteLanguage +
-                "</li>" +
-                "<li>" +
-                secondFavoriteLanguage +
-                "</li>" +
-                "<li>" +
-                thirdFavoriteLanguage +
-                "</li>" +
+                    "<li>" +
+                        favoriteLanguage +
+                    "</li>" +
+                    "<li>" +
+                        secondFavoriteLanguage +
+                    "</li>" +
+                    "<li>" +
+                        thirdFavoriteLanguage +
+                    "</li>" +
                 "</OL>";
     }
 
